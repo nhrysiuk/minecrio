@@ -2,7 +2,7 @@ package items;
 
 import java.awt.image.BufferedImage;
 
-public class FinishPoint extends GameObject{
+public class FinishPoint extends GameObject {
 
     private boolean touched = false;
 
