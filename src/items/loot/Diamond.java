@@ -1,4 +1,4 @@
 package items.loot;
 
-public class Booster {
+public class Diamond {
 }
