@@ -3,6 +3,7 @@ package items.loot;
 import operators.Main;
 import operators.MapOperator;
 import items.GameObject;
+import items.steve.Steve;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
