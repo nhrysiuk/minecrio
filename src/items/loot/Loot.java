@@ -1,5 +1,6 @@
 package items.loot;
 
+import items.steve.Steve;
 import operators.Main;
 
 import java.awt.*;

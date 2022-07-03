@@ -1,5 +1,6 @@
 package items.loot;
 
+import items.steve.Steve;
 import operators.Main;
 import items.GameObject;
 
@@ -36,7 +37,7 @@ public class Diamond extends GameObject implements Loot{
         if(!acquired){
             acquired = true;
             mario.acquirePoints(point);
-            mario.acquireCoin();
+            mario.acquireDiamond();
             engine.playDiamond();
         }
     }

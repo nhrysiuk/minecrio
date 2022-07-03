@@ -7,6 +7,7 @@ import items.steve.Arrow;
 import items.loot.Booster;
 import items.loot.Diamond;
 import items.loot.Loot;
+import items.steve.Steve;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

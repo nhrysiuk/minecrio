@@ -8,6 +8,7 @@ import items.Map;
 import items.enemy.Enemy;
 import items.enemy.Skeleton;
 import items.enemy.Zombie;
+import items.steve.Steve;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -102,8 +103,8 @@ class CreateMap {
                     createdMap.addEnemy(enemy);
                 }
                 else if (currentPixel == steve) {
-                    Steve marioObject = new Steve(xLocation, yLocation);
-                    createdMap.setSteve(marioObject);
+                    Steve steveObject = new Steve(xLocation, yLocation);
+                    createdMap.setSteve(steveObject);
                 }
                 else if(currentPixel == finish){
                     FinishPoint endPoint= new FinishPoint(xLocation+24, yLocation, finishPoint);

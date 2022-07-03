@@ -3,6 +3,7 @@ package operators;
 import appearance.GetImage;
 import appearance.GetMenu;
 import appearance.Appearance;
+import items.steve.Steve;
 
 import javax.swing.*;
 import java.awt.*;
