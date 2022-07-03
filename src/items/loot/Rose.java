@@ -2,7 +2,6 @@ package items.loot;
 
 import appearance.Animation;
 import appearance.GetImage;
-import items.steve.Steve;
 import items.steve.SteveCondition;
 import operators.Main;
 

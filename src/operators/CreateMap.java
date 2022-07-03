@@ -8,7 +8,6 @@ import items.Map;
 import items.enemy.Enemy;
 import items.enemy.Skeleton;
 import items.enemy.Zombie;
-import items.steve.Steve;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

@@ -4,7 +4,6 @@ import items.block.Block;
 import items.block.OrdinaryBlock;
 import items.enemy.Enemy;
 import items.steve.Arrow;
-import items.steve.Steve;
 import items.loot.Booster;
 import items.loot.Diamond;
 import items.loot.Loot;
