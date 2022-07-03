@@ -3,15 +3,44 @@ package appearance;
 import java.awt.image.BufferedImage;
 
 public class Animation {
-    public Animation(BufferedImage[] leftFrames, BufferedImage[] leftFrames1) {
+
+    private int index = 0, count = 0;
+    private BufferedImage[] leftFrames, rightFrames;
+    private BufferedImage currentFrame;
+
+    public Animation(BufferedImage[] leftFrames, BufferedImage[] rightFrames){
+        this.leftFrames = leftFrames;
+        this.rightFrames = rightFrames;
+
+        currentFrame = rightFrames[1];
     }
 
-    public int[] getLeftFrames() {
+    public BufferedImage animate(int speed, boolean toRight){
+        count++;
+        BufferedImage[] frames = toRight ? rightFrames : leftFrames;
 
-        return new int[0];
+        if(count > speed){
+            nextFrame(frames);
+            count = 0;
+        }
+
+        return currentFrame;
     }
 
-    public BufferedImage animate(int i, boolean b) {
-        return null;
+    private void nextFrame(BufferedImage[] frames) {
+        if(index + 3 > frames.length)
+            index = 0;
+
+        currentFrame = frames[index+2];
+        index++;
     }
+
+    public BufferedImage[] getLeftFrames() {
+        return leftFrames;
+    }
+
+    public BufferedImage[] getRightFrames() {
+        return rightFrames;
+    }
+
 }
